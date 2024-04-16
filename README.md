@@ -1,7 +1,7 @@
 The mini-games featured here are inspired by those found in NoPixel 4.0, crafted to mirror the aesthetics and mechanics present in the server. This personal project is a homage to their design, and I intend to refine and expand upon these games as time permits.
 
 **planned minigames**
-- generator hack (typing fast)
+- generator hack (Speed Typing)
 - thermite hack
 - laptop hack
 
@@ -26,7 +26,7 @@ Word Memory is a game designed to test and improve your memory. Players see word
  
 ![picrack](https://github.com/OgPaine/psychic-octo-succotash/blob/main/word.png)
 
-## Pin Cracker Game
+## Pin Crack Game
 
 Pin Crack is a test of speed and memory where players must crack a pin code within a limited time frame.
 
@@ -36,6 +36,20 @@ Pin Crack is a test of speed and memory where players must crack a pin code with
 - Enter the pin code.
 - If you enter the correct pin before time runs out, you win.
 - The game difficulty can be adjusted by selecting the number of digits and time .
+
+  ### Screenshot
+ 
+![pincrack](https://github.com/OgPaine/psychic-octo-succotash/blob/main/pincrack.png)
+
+## Speed Typing
+
+Speed challenges players to type randomly generated letters as accurately and quickly as possible.
+
+### How to Play
+
+- Start the game, and a timer begins counting down.
+- Type the letters as they appear in the boxes from left to right.
+- Try to complete the sequence before the time runs out.
 
   ### Screenshot
  
