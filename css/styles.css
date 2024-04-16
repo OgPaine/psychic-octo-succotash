@@ -1,0 +1,178 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #04131C;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Organize the flow of the body content vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top */
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 550px;
+  margin-top: 60px;
+  background: #082030; /* Dark blue background */
+  padding: 0px;
+  padding-bottom: 0; /* Remove padding at the bottom to allow progress bar to sit flush */
+  border-radius: 5px;
+  text-align: center;
+  position: relative; /* Ensures proper positioning inside the container */
+  margin: auto;
+  box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
+}
+
+.title {
+  color: #14c7bb;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px #14c7bb, 0 0 20px #14c7bb, 0 0 30px #14c7bb; /* Glowing effect */
+}
+
+.subtitle {
+  color: white;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+}
+
+.word-box {
+  background-color: #062D40;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+.word {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;  
+}
+
+
+.buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.score-display {
+  text-align: center; /* Center the text within the element */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  color: #ffffff; /* Color of the score text */
+  margin-bottom: 10px; /* Space between the score and the word box */
+}
+
+.top-menu {
+  width: 100%; /* Full width of the viewport */
+  background-color: #062D40; /* Adjust the color to match your theme */
+  padding: 10px 0; /* Add padding on top and bottom */
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 0 20px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds depth */
+  position: fixed; /* Fixed position to always stay at the top */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  z-index: 100; /* Ensure it stays above other content */
+}
+
+.menu-item {
+  color: #ffffff; /* Ensure text is visible against the dark background */
+  text-decoration: none; /* Remove underlines from links */
+  font-size: 1.2rem; /* Adjust size as needed */
+  margin: 0 20px; /* Space out the links */
+  padding: 5px 10px; /* Padding for better touch targets */
+  display: inline-block; /* Arrange links in a line */
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.menu-item:hover {
+  background-color: #02C4AB; /* Highlight link on hover */
+  border-radius: 5px; /* Rounded corners for a soft look */
+}
+
+.button {
+  background-color: #593074;
+  color: #A139BB;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+.start-button-style {
+  background-color: #39883b; /* Green background for visibility */
+  color: #61e065; /* White text for contrast */
+  padding: 10px 20px; /* Larger padding for a bigger button */
+  font-size: 15px; /* Larger text for better readability */
+  border: none; /* No border for a cleaner look */
+  border-radius: 0.25rem; /* Rounded corners */
+  cursor: pointer; /* Cursor indicates clickable button */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  margin-top: 10px;
+}
+
+.start-button-style:hover {
+  background-color: #45a049; /* Darker shade of green on hover for feedback */
+}
+
+
+.button:hover {
+  background-color: #81389B;
+}
+
+.button.new-word {
+  background-color: #006763;
+  color: #02C4AB;
+}
+
+.button.new-word:hover {
+  background-color: rgba(111, 255, 233, 0.9);
+}
+
+/* Progress Bar Styles */
+.progress-container {
+  width: 100%; /* Makes the progress bar stretch across the container */
+  height: 8px;
+  background-color: #1B1F25;
+  overflow: hidden;
+  margin-top: 20px; /* Space between the last content and the progress bar */
+}
+
+.progress-bar {
+  background-color: #FC4207;
+  height: 100%;
+  width: 100%; /* Start empty and will fill as the timer counts down */
+  transition: width 1s linear; /* Smooth transition matching the duration of the timer */
+}
+
+.github-link {
+  color: #ffffff; /* Your desired text color for the link */
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.github-link:hover {
+  background-color: transparent; /* Or any hover effect you want */
+}
+
+.github-link i {
+  margin-right: 5px; /* Space between the icon and text */
+}
