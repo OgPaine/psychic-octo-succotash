@@ -53,7 +53,7 @@ Speed challenges players to type randomly generated letters as accurately and qu
 
   ### Screenshot
  
-![pincrack](https://github.com/OgPaine/psychic-octo-succotash/blob/main/pincrack.png)
+![pincrack](https://github.com/OgPaine/psychic-octo-succotash/blob/main/speedtype.png)
 
 # Contributing
 Contributions are welcome. Please feel free to submit a pull request or create an issue for any bugs or enhancements.
