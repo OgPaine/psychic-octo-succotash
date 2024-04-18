@@ -1,7 +1,8 @@
 The mini-games featured here are inspired by those found in NoPixel 4.0, crafted to mirror the aesthetics and mechanics present in the server. This personal project is a homage to their design, and I intend to refine and expand upon these games as time permits.
-
+> [!CAUTION]
+> Do not you if you Rp on Nopixel.
 **planned minigames**
-- generator hack (Speed Typing)
+- ~generator hack (Speed Typing)~
 - thermite hack
 - laptop hack
 
