@@ -1,0 +1,31 @@
+/* src/index.css - Tailwind base import should remain at the top */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles using Tailwind's utility-first classes */
+.top-menu {
+  @apply w-full bg-menu-blue px-5 py-0 my-0 flex justify-between items-center shadow-menu fixed top-0 left-0 z-10;
+}
+
+.menu-item {
+  @apply text-white no-underline text-xl mx-5 py-1.5 inline-block transition-colors duration-300;
+}
+
+.menu-item:hover {
+  @apply bg-hover-teal rounded-menu;
+}
+.github-link {
+  @apply text-custom-white no-underline font-bold flex items-center;
+}
+
+.github-link:hover {
+  @apply bg-transparent;
+}
+
+.github-link i {
+  @apply mr-5px;
+}
+body {
+  @apply font-sans bg-[#04131C] m-0 p-0 flex flex-col items-center justify-start h-screen;
+}
