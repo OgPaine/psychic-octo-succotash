@@ -2,8 +2,8 @@ The mini-games featured here are inspired by those found in NoPixel 4.0, crafted
 > [!CAUTION]
 > Do not use if you Rp on Nopixel.
 **planned minigames**
-- thermite hack
-- laptop hack
+- Terminal
+- Mazer
 
 
 # Word Memory and Pin Crack Games
