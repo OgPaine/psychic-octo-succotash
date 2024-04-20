@@ -8,10 +8,6 @@ The mini-games featured here are inspired by those found in NoPixel 4.0, crafted
 - Mazer
 
 
-# Word Memory and Pin Crack Games
-
-This repository contains two mini-games developed for web browsers: "Word Memory" and "Pin Cracker."
-
 ## Word Memory Game
 
 Word Memory is a game designed to test and improve your memory. Players see words on the screen and must remember which have been shown as the game progresses.
