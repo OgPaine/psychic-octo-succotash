@@ -1,19 +1,32 @@
 {
   "files": {
-    "main.css": "/psychic-octo-succotash/static/css/main.c87d9b36.css",
-    "main.js": "/psychic-octo-succotash/static/js/main.4a38aa4c.js",
+    "main.css": "/psychic-octo-succotash/static/css/main.e62c9e61.css",
+    "main.js": "/psychic-octo-succotash/static/js/main.b360815d.js",
     "static/js/453.e6057d0f.chunk.js": "/psychic-octo-succotash/static/js/453.e6057d0f.chunk.js",
     "static/media/win.wav": "/psychic-octo-succotash/static/media/win.f7b8fa1c2cdde1352ba2.wav",
     "static/media/beep2.mp3": "/psychic-octo-succotash/static/media/beep2.2719fe5f9364d813abea.mp3",
     "static/media/beep.mp3": "/psychic-octo-succotash/static/media/beep.009e92f2fd06bd926856.mp3",
     "static/media/pad.svg": "/psychic-octo-succotash/static/media/pad.d1438ebf67f96ad59836662589c788ca.svg",
+    "static/media/grey_mouse.webp": "/psychic-octo-succotash/static/media/grey_mouse.6d359a0d8fa0d11b5d70.webp",
+    "static/media/green_mouse.webp": "/psychic-octo-succotash/static/media/green_mouse.b5cd4c679b0a378babcd.webp",
+    "static/media/green_mouse_highlighted.webp": "/psychic-octo-succotash/static/media/green_mouse_highlighted.09fd639fffb726fccc7b.webp",
+    "static/media/grey_frog.webp": "/psychic-octo-succotash/static/media/grey_frog.396a8e01c45d271a15e3.webp",
+    "static/media/grey_mouse_highlighted.webp": "/psychic-octo-succotash/static/media/grey_mouse_highlighted.818a3b432ef275dd4334.webp",
+    "static/media/green_frog.webp": "/psychic-octo-succotash/static/media/green_frog.7318a6f782c0ea5e1d12.webp",
+    "static/media/grey_bird.webp": "/psychic-octo-succotash/static/media/grey_bird.54ac5a5d89f09949db04.webp",
     "index.html": "/psychic-octo-succotash/index.html",
-    "main.c87d9b36.css.map": "/psychic-octo-succotash/static/css/main.c87d9b36.css.map",
-    "main.4a38aa4c.js.map": "/psychic-octo-succotash/static/js/main.4a38aa4c.js.map",
+    "static/media/green_bird.webp": "/psychic-octo-succotash/static/media/green_bird.2ffab43b5860bc3427df.webp",
+    "static/media/green_frog_highlighted.webp": "/psychic-octo-succotash/static/media/green_frog_highlighted.566daf20b8bf29ca0399.webp",
+    "static/media/grey_frog_highlighted.webp": "/psychic-octo-succotash/static/media/grey_frog_highlighted.e738af378e0185f281ea.webp",
+    "static/media/green_bird_highlighted.webp": "/psychic-octo-succotash/static/media/green_bird_highlighted.f4c6beb3fd809f6e32ca.webp",
+    "static/media/grey_bird_highlighted.webp": "/psychic-octo-succotash/static/media/grey_bird_highlighted.84253528ed62000d290b.webp",
+    "static/media/transparent.webp": "/psychic-octo-succotash/static/media/transparent.4f563d6f7e9b066d3c75.webp",
+    "main.e62c9e61.css.map": "/psychic-octo-succotash/static/css/main.e62c9e61.css.map",
+    "main.b360815d.js.map": "/psychic-octo-succotash/static/js/main.b360815d.js.map",
     "453.e6057d0f.chunk.js.map": "/psychic-octo-succotash/static/js/453.e6057d0f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c87d9b36.css",
-    "static/js/main.4a38aa4c.js"
+    "static/css/main.e62c9e61.css",
+    "static/js/main.b360815d.js"
   ]
 }
