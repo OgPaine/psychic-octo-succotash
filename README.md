@@ -5,7 +5,7 @@ The mini-games featured here are inspired by those found in NoPixel 4.0, crafted
 
 **planned minigames**
 - Terminal
-- Mazer
+- ~~Mazer~~
 
 
 ## Word Memory Game - Cash exchange and pny doors
