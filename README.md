@@ -8,7 +8,7 @@ The mini-games featured here are inspired by those found in NoPixel 4.0, crafted
 - Mazer
 
 
-## Word Memory Game
+## Word Memory Game - Cash exchange and pny doors
 
 Word Memory is a game designed to test and improve your memory. Players see words on the screen and must remember which have been shown as the game progresses.
 
@@ -24,7 +24,7 @@ Word Memory is a game designed to test and improve your memory. Players see word
  
 ![word](https://github.com/OgPaine/psychic-octo-succotash/blob/main/wordmemory.png)
 
-## Pin Crack Game
+## Pin Crack - Keypad Hack
 
 Pin Crack is a test of speed and memory where players must crack a pin code within a limited time frame.
 
@@ -39,7 +39,7 @@ Pin Crack is a test of speed and memory where players must crack a pin code with
  
 ![pincrack](https://github.com/OgPaine/psychic-octo-succotash/blob/main/piccrack.png)
 
-## Speed Typing
+## Speed Typing Car-Chopping
 
 Speed challenges players to type randomly generated letters as accurately and quickly as possible.
 
@@ -53,7 +53,7 @@ Speed challenges players to type randomly generated letters as accurately and qu
  
 ![speed](https://github.com/OgPaine/psychic-octo-succotash/blob/main/speed-typing.png)
 
-## Mazer
+## Mazer- Maze Bank Hack
 
 Speed challenges players to type randomly generated letters as accurately and quickly as possible.
 
@@ -64,7 +64,7 @@ Speed challenges players to type randomly generated letters as accurately and qu
 Click a tile to move based on the creature’s movement pattern on that tile.
 - The first click on a green tile turns it grey.
 - A second click on a grey tile turns it transparent, earning you points.
-- Objective: Reach 25 points before the timer runs out or you run out of moves.
+- Objective: Reach 24 points before the timer runs out or you run out of moves.
 - Restarting the Game: Click the "Restart Game" button to reset the board and timer.
 
   ### Screenshot
