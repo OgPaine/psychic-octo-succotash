@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/psychic-octo-succotash/static/css/main.e62c9e61.css",
-    "main.js": "/psychic-octo-succotash/static/js/main.b360815d.js",
+    "main.js": "/psychic-octo-succotash/static/js/main.c782ca1a.js",
     "static/js/453.e6057d0f.chunk.js": "/psychic-octo-succotash/static/js/453.e6057d0f.chunk.js",
     "static/media/win.wav": "/psychic-octo-succotash/static/media/win.f7b8fa1c2cdde1352ba2.wav",
     "static/media/beep2.mp3": "/psychic-octo-succotash/static/media/beep2.2719fe5f9364d813abea.mp3",
@@ -22,11 +22,11 @@
     "static/media/grey_bird_highlighted.webp": "/psychic-octo-succotash/static/media/grey_bird_highlighted.84253528ed62000d290b.webp",
     "static/media/transparent.webp": "/psychic-octo-succotash/static/media/transparent.4f563d6f7e9b066d3c75.webp",
     "main.e62c9e61.css.map": "/psychic-octo-succotash/static/css/main.e62c9e61.css.map",
-    "main.b360815d.js.map": "/psychic-octo-succotash/static/js/main.b360815d.js.map",
+    "main.c782ca1a.js.map": "/psychic-octo-succotash/static/js/main.c782ca1a.js.map",
     "453.e6057d0f.chunk.js.map": "/psychic-octo-succotash/static/js/453.e6057d0f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e62c9e61.css",
-    "static/js/main.b360815d.js"
+    "static/js/main.c782ca1a.js"
   ]
 }
