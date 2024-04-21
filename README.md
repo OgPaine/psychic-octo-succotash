@@ -53,5 +53,24 @@ Speed challenges players to type randomly generated letters as accurately and qu
  
 ![speed](https://github.com/OgPaine/psychic-octo-succotash/blob/main/speed-typing.png)
 
+## Mazer
+
+Speed challenges players to type randomly generated letters as accurately and quickly as possible.
+
+### How to Play
+
+- Starting the Game: Load the game to see the board initialized with randomly assigned creatures on green tiles.
+- Playing the Game:
+Click a tile to move based on the creature’s movement pattern on that tile.
+- The first click on a green tile turns it grey.
+- A second click on a grey tile turns it transparent, earning you points.
+- Objective: Reach 25 points before the timer runs out or you run out of moves.
+- Restarting the Game: Click the "Restart Game" button to reset the board and timer.
+
+  ### Screenshot
+ 
+![mazer](https://github.com/OgPaine/psychic-octo-succotash/blob/main/Mazer.png)
+
+
 # Contributing
 Contributions are welcome. Please feel free to submit a pull request or create an issue for any bugs or enhancements.
