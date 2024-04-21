@@ -196,7 +196,7 @@ useEffect(() => {
     <input
         key={index}
         type="text"
-        className={`bg-transparent border-b-4 ${getBorderClass(index)} text-white text-center w-16 h-12 text-3xl m-1 focus:outline-none`}
+        className={`bg-transparent border-b-3 ${getBorderClass(index)} text-white text-center w-16 h-12 text-3xl m-1 focus:outline-none`}
         maxLength="1"
         value={g}
         onChange={(e) => handleChange(index, e.target.value)}

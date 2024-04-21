@@ -18,6 +18,9 @@ module.exports = {
       boxShadow: {
         'menu': '0 2px 5px rgba(0, 0, 0, 0.2)',
       },
+      borderWidth: {
+        '3': '3px',
+      },
     },
   },
   plugins: [],
