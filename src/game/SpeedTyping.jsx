@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import PadIcon from "../assets/pad.svg"; // Importing the SVG
-
 
 const SpeedTyping = () => {
   const [letters, setLetters] = useState(Array(16).fill('?')); // Initial letters are '?' to indicate uninitialized game
@@ -10,6 +9,7 @@ const SpeedTyping = () => {
   const [statusMessage, setStatusMessage] = useState('Press Start to Play!');
   const [isGameRunning, setIsGameRunning] = useState(false);
   const [letterStatuses, setLetterStatuses] = useState(Array(16).fill('bg-transparent')); // Initial background is gray
+  const hiddenInputRef = useRef(null); // Reference to hidden input field
 
   const randomLetter = () => {
     return String.fromCharCode(65 + Math.floor(Math.random() * 26));
@@ -32,6 +32,8 @@ const SpeedTyping = () => {
     startTimer(10); // Start the timer with 10 seconds
     setStatusMessage('');
     setIsGameRunning(true);
+    // Focus on hidden input field to trigger mobile keyboard
+    hiddenInputRef.current.focus();
   };
 
   const startTimer = (duration) => {
@@ -76,8 +78,7 @@ const SpeedTyping = () => {
       endGame(false);
     }
 
-    setLetterStatuses(newStatuses);
-  }, [isGameRunning, currentLetterIndex, letters, letterStatuses]);
+  }, [isGameRunning, currentLetterIndex, letters]);
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
@@ -86,13 +87,10 @@ const SpeedTyping = () => {
     };
   }, [handleKeyDown]);
 
-
-
-  
   return (
-<div className="flex items-center justify-center h-screen bg-[#04131C]">
-   <div className="bg-[#082030] w-[500px] p-0 pb-0 rounded text-center relative box-border">
-   <div className="flex items-center justify-center text-center mx-auto my-2">
+    <div className="flex items-center justify-center h-screen bg-[#04131C]">
+      <div className="bg-[#082030] w-[500px] p-0 pb-0 rounded text-center relative box-border">
+        <div className="flex items-center justify-center text-center mx-auto my-2">
           <img src={PadIcon} alt="Pad Icon" className="h-7 mr-2" />{" "}
           {/* Display the SVG here */}
           <h1
@@ -104,7 +102,7 @@ const SpeedTyping = () => {
             Speed Typing
           </h1>
           <p className="text-white text-xs self-center">
-            tap the letters in order 
+            tap the letters in order
           </p>
         </div>
         <div className="subtitle text-lg text-white mb-4">{statusMessage}</div>
@@ -133,14 +131,14 @@ const SpeedTyping = () => {
           </div>
         </div>
         <button onClick={startGame} className="start-button bg-green-500 text-white px-4 py-2 rounded mt-4">Start/Restart Game</button>
+        {/* Hidden input field to trigger mobile keyboard */}
+        <input ref={hiddenInputRef} type="text" style={{ opacity: 0, position: 'absolute', zIndex: -1, pointerEvents: 'none' }} />
         <div className="progress-container w-full h-2 bg-gray-800 mt-4 relative">
           <div className="progress-bar bg-[#fc4207] h-full absolute top-0" style={{ width: `${progressWidth}%` }}></div>
-   </div>
-</div>
-</div>
-
+        </div>
+      </div>
+    </div>
   );
-  
 };
 
 export default SpeedTyping;

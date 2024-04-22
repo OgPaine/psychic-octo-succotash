@@ -75,6 +75,9 @@ const Mazer = () => {
               }
             });
           }, 1000);
+        } else {
+          setTimeLeft(40); // Reset time when hasStarted is false
+          setProgress(100);
         }
       
         return () => {
@@ -133,6 +136,8 @@ const Mazer = () => {
   
     setHighlightedTiles(newHighlightedTiles);
   
+
+
     // Check if there are no more highlighted tiles and set the game over if true
     if (newHighlightedTiles.length === 0) {
       setGameOver(true);
@@ -187,18 +192,14 @@ const Mazer = () => {
   
 
   const getImage = (creature, state, isHighlighted) => {
-    if (state === 'transparent') {
-      return transparent; // Directly return the transparent image if the tile is transparent
-    }
-  
     const baseName = `${state}${creature.charAt(0).toUpperCase() + creature.slice(1)}`;
     const imageName = isHighlighted ? `${baseName}Highlighted` : baseName;
-    return images[imageName] || transparent; // Default to transparent if no image is found
+    return images[imageName] || transparent;
   };
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-[#04131C]">
-      <div className="bg-[#082030] w-[500px]  pb-0 rounded text-center relative box-border">
+      <div className="bg-[#082030] lg:w-[500px]  pb-0 rounded text-center relative box-border">
         <div className="flex items-center justify-center text-center mx-auto my-2">
           <img src={PadIcon} alt="Pad Icon" className="h-7 mr-2" />
           <h1 className="text-[#14c7bb] text-lg mr-2" style={{ textShadow: "0 0 5px #14c7bb, 0 0 20px #14c7bb, 0 0 30px #14c7bb" }}>
@@ -211,17 +212,20 @@ const Mazer = () => {
         <div className="text-lg mb-2 font-bold text-white">{score}/24</div>
 
         <div className="grid grid-cols-6 gap-1 p-4">
-          {board.map((tile, index) => {
-            const isHighlighted = highlightedTiles.includes(index);
-            const imageUrl = getImage(tile.creature, tile.state, isHighlighted);
-            return (
-              <div key={index} onClick={() => handleTileClick(index)}
-                className={`cursor-pointer p-0.5 ${tile.state === 'transparent' ? 'opacity-50' : ''}`}>
-                <img src={imageUrl} alt={`${tile.creature}`} className="tile-image" />
-              </div>
-            );
-          })}
-        </div>
+  {board.map((tile, index) => {
+    const isHighlighted = highlightedTiles.includes(index);
+    const imageUrl = getImage(tile.creature, tile.state, isHighlighted); // Define imageUrl here inside map
+
+    return (
+      <div key={index} onClick={() => handleTileClick(index)}
+        className={`cursor-pointer p-0.5 ${tile.state === 'transparent' ? 'opacity-50' : ''}`}>
+        <img src={imageUrl} alt={`${tile.creature}`} className="tile-image" onDragStart={(e) => e.preventDefault()} />
+      </div>
+    );
+  })}
+</div>
+        <div className="text-white text-lg mb-2">Time left: {timeLeft} seconds</div>
+
         <div className="w-full bg-[#fc4207] full h-2 dark:bg-gray-700">
         <div className="bg-[#fc4207] h-2 full" style={{ width: `${progress}%` }}></div>
       </div>

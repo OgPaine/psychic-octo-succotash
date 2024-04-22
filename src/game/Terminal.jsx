@@ -1,38 +1,116 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import PadIcon from "../assets/pad.svg"; // Importing the SVG
+import React, { useState, useEffect } from 'react';
 
-
-const Terminal = () => {
-
-
-
-  
-  return (
-<div className="flex items-center justify-center h-screen bg-[#04131C]">
-   <div className="bg-[#082030] w-[500px] p-0 pb-0 rounded text-center relative box-border">
-   <div className="flex items-center justify-center text-center mx-auto my-2">
-          <img src={PadIcon} alt="Pad Icon" className="h-7 mr-2" />{" "}
-          {/* Display the SVG here */}
-          <h1
-            className="text-[#14c7bb] text-lg mr-2"
-            style={{
-              textShadow: "0 0 5px #14c7bb, 0 0 20px #14c7bb, 0 0 30px #14c7bb",
-            }}
-          >
-            Terminal
-          </h1>
-          <p className="text-white text-xs self-center">
-          Replicate the sequence
-          </p>
-        </div>
-       
-        
-        
-</div>
-</div>
-
-  );
-  
+const shapes = {
+  square: `
+#####
+#   #
+#   #
+#   #
+#####`,
+  circle: ` 
+  ###
+ #   #
+#     #
+ #   #
+  ###`,
+  triangle: `
+   #
+ #   #
+#     #
+#######`
 };
 
-export default Terminal;
+const colors = ['text-red-500', 'text-green-500', 'text-yellow-500', 'text-orange-500', 'text-blue-500', 'text-purple-500'];
+
+function getRandomShapes() {
+  const keys = Object.keys(shapes);
+  const color = colors[Math.floor(Math.random() * colors.length)];
+  return [
+    { shape: shapes[keys[Math.floor(Math.random() * keys.length)]], color: color },
+    { shape: shapes[keys[Math.floor(Math.random() * keys.length)]], color: color }
+  ];
+}
+
+const Game = () => {
+  const [currentSequence, setCurrentSequence] = useState(0);
+  const [showTest, setShowTest] = useState(false);
+  const [userAnswers, setUserAnswers] = useState([]);
+  const [sequences, setSequences] = useState([]);
+
+  useEffect(() => {
+    const newSequences = [];
+    for (let i = 0; i < 3; i++) { // Limited to 3 sequences
+      newSequences.push(getRandomShapes());
+    }
+    setSequences(newSequences);
+  }, []);
+
+  useEffect(() => {
+    if (currentSequence < 3 - 1 && sequences.length > 0 && !showTest) {
+      const timer = setTimeout(() => {
+        setCurrentSequence(currentSequence + 1);
+      }, 3000); // Adjust time as needed
+      return () => clearTimeout(timer);
+    } else if (currentSequence === 3 - 1) {
+      setShowTest(true);
+    }
+  }, [currentSequence, sequences, showTest]);
+
+  const handleAnswerChange = (event, index) => {
+    const newAnswers = [...userAnswers];
+    newAnswers[index] = event.target.value;
+    setUserAnswers(newAnswers);
+  };
+
+  const calculateScore = () => {
+    let score = 0;
+    userAnswers.forEach((answer, index) => {
+      const correct = sequences[index].map(item => Object.keys(shapes).find(key => shapes[key] === item.shape));
+      if (answer.trim() === correct.join(' ')) {
+        score++;
+      }
+    });
+    return score;
+  };
+
+  const renderSequence = (sequence, seqIndex) => (
+    <div>
+      <h3 className="text-lg mb-1">{`Sequence ${seqIndex + 1}`}</h3>
+      <div className="flex justify-center space-x-2">
+        {sequence.map((item, index) => (
+          <pre key={index} className={`${item.color} text-sm`}>{item.shape}</pre>
+        ))}
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="App p-5">
+      {!showTest && sequences.length > 0 && (
+        <div className="text-center">
+          {renderSequence(sequences[currentSequence], currentSequence)}
+        </div>
+      )}
+
+      {showTest && (
+        <div className="test-section">
+          <h2 className="text-lg">Memory Test</h2>
+          {sequences.map((sequence, index) => (
+            <div key={index}>
+              <label className="block mb-2">What was the shape pair in sequence {index + 1}?</label>
+              <input
+                type="text"
+                className="p-2 border border-gray-300 rounded"
+                onChange={(e) => handleAnswerChange(e, index)}
+                value={userAnswers[index] || ''}
+              />
+            </div>
+          ))}
+          <button className="mt-4 p-2 bg-blue-500 text-white rounded" onClick={() => alert(`Your score is ${calculateScore()}`)}>Submit Answers</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default Game;

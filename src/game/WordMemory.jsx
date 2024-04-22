@@ -102,8 +102,8 @@ const WordMemory = () => {
   };
   return (
     <div className="flex items-center justify-center h-screen bg-[#04131C]">
-      <div className="bg-[#082030] w-[500px] p-0 pb-0 rounded text-center relative box-border">
-        <div className="flex items-center justify-center text-center mx-auto my-2">
+      <div className="bg-[#082030] lg:w-[500px] p-0 pb-0 rounded text-center relative box-border">
+        <div className="flex items-center  lg:w-[500px] justify-center text-center mx-auto my-2">
           <img src={PadIcon} alt="Pad Icon" className="h-7 mr-2" />{" "}
           {/* Display the SVG here */}
           <h1
@@ -125,7 +125,7 @@ const WordMemory = () => {
         </div>
 
         {/* Word Box */}
-        <div className="bg-[#062d40] rounded p-6 mb-6 mx-6">
+        <div className="bg-[#062d40] rounded p-6 mb-6 mx-10">
           <span className="text-2xl text-custom-white font-bold inline-block">
             {currentWord || "Press start to play!"}
           </span>
