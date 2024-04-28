@@ -22,7 +22,7 @@ Word Memory is designed to test and improve your memory. Players see words on th
 Pin Crack challenges players to crack a pin code within a limited time frame, testing speed and memory. 
 
 #### Known Bug
-- **Backspace Issue**: Once a player uses backspace on some digits, they cannot re-enter numbers. This issue is currently under investigation for a fix.
+- ~~**Backspace Issue**: Once a player uses backspace on some digits, they cannot re-enter numbers. This issue is currently under investigation for a fix.~~
 
 ![pincrack](https://github.com/OgPaine/psychic-octo-succotash/blob/main/PinCrack.png)
 
