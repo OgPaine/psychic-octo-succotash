@@ -15,7 +15,7 @@ The mini-games featured here are inspired by those found in NoPixel 4.0, crafted
 
 Word Memory is designed to test and improve your memory. Players see words on the screen and must remember which have been shown as the game progresses.
 
-![word](https://github.com/OgPaine/psychic-octo-succotash/blob/main/WordMemory.png)
+![word](https://github.com/OgPaine/psychic-octo-succotash/blob/main/wordmemory.png)
 
 ### Pin Crack v1.5.1 - Keypad Hack
 
@@ -24,13 +24,13 @@ Pin Crack challenges players to crack a pin code within a limited time frame, te
 #### Known Bug
 - ~~**Backspace Issue**: Once a player uses backspace on some digits, they cannot re-enter numbers. This issue is currently under investigation for a fix.~~
 
-![pincrack](https://github.com/OgPaine/psychic-octo-succotash/blob/main/PinCrack.png)
+![pincrack](https://github.com/OgPaine/psychic-octo-succotash/blob/main/picrack.png)
 
 ### Speed Typing v1.5.1 - Car Chopping
 
 Speed Typing challenges players to type randomly generated letters as accurately and quickly as possible.
 
-![speed](https://github.com/OgPaine/psychic-octo-succotash/blob/main/SpeedTyping.png)
+![speed](https://github.com/OgPaine/psychic-octo-succotash/blob/main/speedtyping.png)
 
 ### Mazer v1.5.1 - Maze Bank Hack
 ### Planned update
@@ -51,7 +51,7 @@ Mazer tests players' strategic thinking and quick decision-making as they naviga
 
 #### Screenshot
 
-![mazer](https://github.com/OgPaine/psychic-octo-succotash/blob/main/Mazer.png)
+![mazer](https://github.com/OgPaine/psychic-octo-succotash/blob/main/mazer.png)
 
 ## Contributing
 
