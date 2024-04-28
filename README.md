@@ -11,13 +11,13 @@ The mini-games featured here are inspired by those found in NoPixel 4.0, crafted
 
 ## Games Description
 
-### Word Memory Game v1.5.0 - Cash Exchange and Pny Doors
+### Word Memory Game v1.5.1 - Cash Exchange and Pny Doors
 
 Word Memory is designed to test and improve your memory. Players see words on the screen and must remember which have been shown as the game progresses.
 
 ![word](https://github.com/OgPaine/psychic-octo-succotash/blob/main/WordMemory.png)
 
-### Pin Crack v1.5.0 - Keypad Hack
+### Pin Crack v1.5.1 - Keypad Hack
 
 Pin Crack challenges players to crack a pin code within a limited time frame, testing speed and memory. 
 
@@ -26,13 +26,16 @@ Pin Crack challenges players to crack a pin code within a limited time frame, te
 
 ![pincrack](https://github.com/OgPaine/psychic-octo-succotash/blob/main/PinCrack.png)
 
-### Speed Typing v1.5.0 - Car Chopping
+### Speed Typing v1.5.1 - Car Chopping
 
 Speed Typing challenges players to type randomly generated letters as accurately and quickly as possible.
 
 ![speed](https://github.com/OgPaine/psychic-octo-succotash/blob/main/SpeedTyping.png)
 
-### Mazer v1.5.0 - Maze Bank Hack
+### Mazer v1.5.1 - Maze Bank Hack
+### Planned update
+- **Add combos **: CRC BYPASSED + 2, 2X CRC BYPASSED + 4.
+
 
 Mazer tests players' strategic thinking and quick decision-making as they navigate to earn points by converting tiles.
 

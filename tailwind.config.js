@@ -9,6 +9,9 @@ module.exports = {
         'hover-teal': '#02c4ab',
         'custom-white': '#ffffff',
       },
+      backgroundImage: {
+        'cir': "url('./assets/3920.jpg)",
+      },
       spacing: {
         '5px': '5px',
       },
