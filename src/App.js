@@ -6,7 +6,6 @@ import WordMemory from './game/WordMemory';
 import PinCrack from './game/PinCrack';
 import SpeedTyping from './game/SpeedTyping';
 import Mazer from './game/Mazer';
-import Terminal from './game/Terminal';
 import './App.css'; // Assuming you have a separate CSS file for styling
 
 function App() {

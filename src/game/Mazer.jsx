@@ -200,18 +200,24 @@ const Mazer = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-[#04131C]">
       <div className="bg-[#082030] lg:w-[500px]  pb-0 rounded text-center relative box-border">
-        <div className="flex items-center justify-center text-center mx-auto my-2">
-          <img src={PadIcon} alt="Pad Icon" className="h-7 mr-2" />
-          <h1 className="text-[#14c7bb] text-lg mr-2" style={{ textShadow: "0 0 5px #14c7bb, 0 0 20px #14c7bb, 0 0 30px #14c7bb" }}>
+      <div className="flex lg:w-[500px] ml-2 my-2">
+          <img src={PadIcon} alt="Pad Icon" className="h-7" />{" "}
+          {/* Display the SVG here */}
+          <h1
+            className="text-[#14c7bb] font-semibold text-lg mx-2"
+            style={{
+              textShadow: "0 0 5px #14c7bb, 0 0 10px #14c7bb, 0 0 20px #14c7bb",
+            }}
+          >
             Mazer
           </h1>
-          <p className="text-white text-xs self-center">
+          <p className="text-neutral-400 text-xs self-center mt-1">
           Decrypt the required number of bytes
           </p>
         </div>
-        <div className="text-lg mb-2 font-bold text-white">{score}/24</div>
+        <div className="text-lg mb-1 font-bold text-white">{score}/24</div>
 
-        <div className="grid grid-cols-6 gap-1 p-4">
+        <div className="grid grid-cols-6 gap-1 p-2">
   {board.map((tile, index) => {
     const isHighlighted = highlightedTiles.includes(index);
     const imageUrl = getImage(tile.creature, tile.state, isHighlighted); // Define imageUrl here inside map
@@ -224,10 +230,8 @@ const Mazer = () => {
     );
   })}
 </div>
-        <div className="text-white text-lg mb-2">Time left: {timeLeft} seconds</div>
-
-        <div className="w-full bg-[#fc4207] full h-2 dark:bg-gray-700">
-        <div className="bg-[#fc4207] h-2 full" style={{ width: `${progress}%` }}></div>
+        <div className="w-full bg-orange-600 full h-2 dark:bg-gray-700">
+        <div className="bg-orange-600 h-2 full" style={{ width: `${progress}%` }}></div>
       </div>
         {gameOver && (
   <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
