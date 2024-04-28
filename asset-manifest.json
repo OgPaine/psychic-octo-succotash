@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/psychic-octo-succotash/static/css/main.22766fbc.css",
-    "main.js": "/psychic-octo-succotash/static/js/main.5a4b255f.js",
+    "main.css": "/psychic-octo-succotash/static/css/main.3f7b1c47.css",
+    "main.js": "/psychic-octo-succotash/static/js/main.57ad16d6.js",
     "static/js/453.e6057d0f.chunk.js": "/psychic-octo-succotash/static/js/453.e6057d0f.chunk.js",
     "static/media/win.wav": "/psychic-octo-succotash/static/media/win.f7b8fa1c2cdde1352ba2.wav",
     "static/media/beep2.mp3": "/psychic-octo-succotash/static/media/beep2.2719fe5f9364d813abea.mp3",
     "static/media/beep.mp3": "/psychic-octo-succotash/static/media/beep.009e92f2fd06bd926856.mp3",
+    "static/media/beep3.mp3": "/psychic-octo-succotash/static/media/beep3.88aa8e42a5077e1968ba.mp3",
     "static/media/pad.svg": "/psychic-octo-succotash/static/media/pad.d1438ebf67f96ad59836662589c788ca.svg",
+    "static/media/padIcon.svg": "/psychic-octo-succotash/static/media/padIcon.d1438ebf67f96ad59836662589c788ca.svg",
+    "static/media/volumeIcon.svg": "/psychic-octo-succotash/static/media/volumeIcon.aa9c91fe51aed0879c297423c5c90e75.svg",
+    "static/media/muteIcon.svg": "/psychic-octo-succotash/static/media/muteIcon.689dc39daa02c0e168a90f3f9be6c55f.svg",
     "static/media/grey_mouse.webp": "/psychic-octo-succotash/static/media/grey_mouse.6d359a0d8fa0d11b5d70.webp",
     "static/media/green_mouse.webp": "/psychic-octo-succotash/static/media/green_mouse.b5cd4c679b0a378babcd.webp",
     "static/media/green_mouse_highlighted.webp": "/psychic-octo-succotash/static/media/green_mouse_highlighted.09fd639fffb726fccc7b.webp",
@@ -21,12 +25,12 @@
     "static/media/green_bird_highlighted.webp": "/psychic-octo-succotash/static/media/green_bird_highlighted.f4c6beb3fd809f6e32ca.webp",
     "static/media/grey_bird_highlighted.webp": "/psychic-octo-succotash/static/media/grey_bird_highlighted.84253528ed62000d290b.webp",
     "static/media/transparent.webp": "/psychic-octo-succotash/static/media/transparent.4f563d6f7e9b066d3c75.webp",
-    "main.22766fbc.css.map": "/psychic-octo-succotash/static/css/main.22766fbc.css.map",
-    "main.5a4b255f.js.map": "/psychic-octo-succotash/static/js/main.5a4b255f.js.map",
+    "main.3f7b1c47.css.map": "/psychic-octo-succotash/static/css/main.3f7b1c47.css.map",
+    "main.57ad16d6.js.map": "/psychic-octo-succotash/static/js/main.57ad16d6.js.map",
     "453.e6057d0f.chunk.js.map": "/psychic-octo-succotash/static/js/453.e6057d0f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22766fbc.css",
-    "static/js/main.5a4b255f.js"
+    "static/css/main.3f7b1c47.css",
+    "static/js/main.57ad16d6.js"
   ]
 }
