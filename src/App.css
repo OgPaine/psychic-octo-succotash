@@ -49,7 +49,6 @@
 
 /* Styling for sliders */
 .slider {
-  -webkit-appearance: none;
   width: 100px; /* Smaller width for compact design */
   height: 8px; /* Slider thickness */
   border-radius: 5px;
