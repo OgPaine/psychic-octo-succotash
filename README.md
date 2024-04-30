@@ -56,3 +56,12 @@ Mazer tests players' strategic thinking and quick decision-making as they naviga
 ## Contributing
 
 Contributions are welcome. Please feel free to submit a pull request or create an issue for any bugs or enhancements.
+
+
+### Roof Running v1.0.1 - Same Game
+
+Pin Crack challenges players to crack a pin code within a limited time frame, testing speed and memory. 
+
+
+![roofrunning](https://github.com/OgPaine/psychic-octo-succotash/blob/main/Roofrunning.png)
+
