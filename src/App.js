@@ -6,6 +6,7 @@ import WordMemory from './game/WordMemory';
 import PinCrack from './game/PinCrack';
 import SpeedTyping from './game/SpeedTyping';
 import Mazer from './game/Mazer';
+import RoofRunning from './game/RoofRunning';
 import './App.css'; // Assuming you have a separate CSS file for styling
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Link to="/pin-crack" className="menu-item" onClick={toggleMenu}>Pin Crack</Link>
           <Link to="/speed-typing" className="menu-item" onClick={toggleMenu}>Speed Typing</Link>
           <Link to="/mazer" className="menu-item" onClick={toggleMenu}>Mazer</Link>
+          <Link to="/roof-running" className="menu-item" onClick={toggleMenu}>Roof Running</Link>
           <div className="github-link" onClick={toggleMenu}>
             <a href="https://github.com/OgPaine/psychic-octo-succotash">
               <FontAwesomeIcon icon={faGithub} /> GitHub Repository
@@ -38,6 +40,7 @@ function App() {
         <Route path="/pin-crack" element={<PinCrack />} />
         <Route path="/speed-typing" element={<SpeedTyping />} />
         <Route path="/mazer" element={<Mazer />} />
+        <Route path="/roof-running" element={<RoofRunning />} />
       </Routes>
     </Router>
   );

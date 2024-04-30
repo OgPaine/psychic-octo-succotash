@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import PadIcon from "../assets/pad.svg"; // Importing the SVG
-import beepSound from "../assets/beep3.mp3"; // Importing the beep sound
-import muteIcon from "../assets/muteIcon.svg";
-import volumeIcon from "../assets/volumeIcon.svg";
+import beepSound from "../assets/beep3.mp3"; 
+import { PadIcon, muteIcon, volumeIcon } from "../assets";
+
 
 const SpeedTyping = () => {
   const [letters, setLetters] = useState(Array(17).fill('?')); // Initial letters are '?' to indicate uninitialized game
@@ -12,25 +11,25 @@ const SpeedTyping = () => {
   const [statusMessage, setStatusMessage] = useState('Press Start to Play!');
   const [isGameRunning, setIsGameRunning] = useState(false);
   const [letterStatuses, setLetterStatuses] = useState(Array(17).fill('bg-transparent')); // Initial background is gray
-  const [letterCount, setLetterCount] = useState(10); // Initial letter count for easy mode
-  const [soundEnabled, setSoundEnabled] = useState(true); // Initial sound state
-  const [isTimerEnabled, setIsTimerEnabled] = useState(true); // Initial timer state
+  const [letterCount, setLetterCount] = useState(10); 
+  const [soundEnabled, setSoundEnabled] = useState(true); 
+  const [isTimerEnabled, setIsTimerEnabled] = useState(true); 
   const hiddenInputRef = useRef(null);
-  const audioRef = useRef(new Audio(beepSound)); // Preload the audio file
+  const audioRef = useRef(new Audio(beepSound)); 
 
   const randomLetter = () => {
     return String.fromCharCode(65 + Math.floor(Math.random() * 26));
   };
 
-  // Create array to hold audio elements for each letter
+  
   const beepAudios = useRef(Array(17).fill(null).map(() => new Audio(beepSound)));
 
   useEffect(() => {
-    // Set initial volume based on the soundEnabled state
+ 
     const initialVolume = soundEnabled ? 0.3 : 0;
     audioRef.current.volume = initialVolume;
 
-    // Set volume for each individual audio element
+    
     beepAudios.current.forEach(audio => {
       audio.volume = initialVolume;
     });
@@ -45,18 +44,18 @@ const SpeedTyping = () => {
     const hardLetters = Array(17).fill('?').map(() => randomLetter());
 
     setLetters(letterCount === 10 ? easyLetters : hardLetters);
-    setLetterStatuses(Array(letterCount).fill('bg-transparent')); // Reset background colors
+    setLetterStatuses(Array(letterCount).fill('bg-transparent')); 
   };
 
   const startGame = () => {
     setCurrentLetterIndex(0);
     populateLetters();
     if (isTimerEnabled) {
-      startTimer(7); // Start the timer with 7 seconds
+      startTimer(7); 
     }
     setStatusMessage('');
     setIsGameRunning(true);
-    hiddenInputRef.current.focus(); // Focus the hidden input to trigger the keyboard on mobile
+    hiddenInputRef.current.focus(); 
   };
 
   useEffect(() => {
@@ -93,24 +92,24 @@ const SpeedTyping = () => {
   const handleKeyDown = useCallback((e) => {
     if (!isGameRunning) return;
 
-    const inputChar = e.key.toUpperCase(); // Normalize input to uppercase
-    const expectedChar = letters[currentLetterIndex].toUpperCase(); // Expected character also to uppercase
+    const inputChar = e.key.toUpperCase(); 
+    const expectedChar = letters[currentLetterIndex].toUpperCase(); 
 
     let newStatuses = [...letterStatuses];
 
     if (inputChar === expectedChar) {
-      // Play beep sound when correct letter is typed
+      
       if (soundEnabled) {
         beepAudios.current[currentLetterIndex].play();
       }
 
-      newStatuses[currentLetterIndex] = 'bg-[#095253]'; // Correct input
+      newStatuses[currentLetterIndex] = 'bg-[#095253]'; 
       setCurrentLetterIndex(currentLetterIndex + 1);
       if (currentLetterIndex === letters.length - 1) {
         endGame(true);
       }
     } else {
-      newStatuses[currentLetterIndex] = 'bg-[#C75B62]'; // Incorrect input
+      newStatuses[currentLetterIndex] = 'bg-[#C75B62]'; 
       endGame(false);
     }
     setLetterStatuses(newStatuses);
@@ -137,7 +136,7 @@ const SpeedTyping = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-[#04131C]">
-      <div className="settings">
+      <div className="settings mb-6">
         <div>
           <label htmlFor="difficulty">Difficulty:</label>
           <select
@@ -211,8 +210,8 @@ const SpeedTyping = () => {
           />
         </div>
         <button
-          onTouchStart={startGame} // Handle touch events specifically
-          onClick={startGame} // Keep click event for non-touch devices
+          onTouchStart={startGame} 
+          onClick={startGame} 
           className="start-button bg-green-500 text-white px-4 py-2 rounded mt-4"
         >
           Start/Restart Game

@@ -107,7 +107,7 @@ const WordMemory = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-[#04131C]">
            {/* Settings Section */}
-    <div className="settings">
+    <div className="settings mb-6">
       <div>
         <label htmlFor="game-duration">Speed:</label>
         <input id="game-duration" type="range" className="slider" min="30" max="60" step="5" value={gameDuration} onChange={(e) => setGameDuration(parseInt(e.target.value))} />

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PadIcon from '../assets/pad.svg';
 import '../App.css'; 
 
-// Consolidating all image imports into a single object for easier access
+// Consolidating all image imports
 import transparent from '../images/transparent.webp';
 import greenBird from '../images/green_bird.webp';
 import greenBirdHighlighted from '../images/green_bird_highlighted.webp';
@@ -220,7 +220,7 @@ const Mazer = () => {
         <div className="grid grid-cols-6 gap-1 p-2">
   {board.map((tile, index) => {
     const isHighlighted = highlightedTiles.includes(index);
-    const imageUrl = getImage(tile.creature, tile.state, isHighlighted); // Define imageUrl here inside map
+    const imageUrl = getImage(tile.creature, tile.state, isHighlighted); 
 
     return (
       <div key={index} onClick={() => handleTileClick(index)}
